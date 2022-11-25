@@ -1,0 +1,99 @@
+.input-group-text {
+  background-color: rgb(255, 255, 255);
+}
+
+.input-group {
+  margin-bottom: 40px;
+  width: 500px;
+}
+
+#search {
+  border-radius: 1400px;
+}
+
+.form-check-input {
+  width: 25px;
+}
+
+#name {
+  margin-left: 15px;
+  width: 220px;
+}
+
+#label {
+  width: 100px;
+  margin-top: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#label2 {
+  margin-top: -11px;
+}
+
+#div1 {
+  margin-top: 12px;
+}
+
+#direc {
+  margin-top: 40px;
+}
+
+#fem {
+  margin-left: 15px;
+}
+
+.boton {
+  max-width: 250px;
+  position: relative;
+  margin-left: 20px;
+}
+
+/* 
+  Creamos la fecha que aparece a la izquierda del select.
+  Realmente este elemento es un cuadrado que sólo tienen
+  dos bordes con color y que giramos con transform: rotate(-45deg);
+  */
+.boton i {
+  position: absolute;
+  right: 20px;
+  top: calc(50% - 13px);
+  width: 16px;
+  height: 16px;
+  display: block;
+  border-left: 4px solid #ffffff;
+  border-bottom: 4px solid #899790;
+  transform: rotate(-45deg); /* Giramos el cuadrado */
+  transition: all 0.25s ease;
+}
+
+.boton:hover i {
+  margin-top: 3px;
+}
+
+.boton button{
+  display: inline-block;
+  width: 205px;
+  cursor: pointer;
+  padding: 7px 10px;
+  height: 42px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #31be62;
+  color: #000000;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  font-family: "Quicksand", sans-serif;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;
+  margin-left: 25px;
+  margin-top: 30px;
+}
+
+.boton button:hover {
+  background-color: #dcdcdc;
+  color: #000000;
+}

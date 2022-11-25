@@ -1,0 +1,114 @@
+<section class="vh-100" style="background-color: #eee;">
+    <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-12 col-xl-11">
+                <div class="card text-black" style="border-radius: 25px;">
+                    <div class="card-body p-md-5">
+                        <div>
+                            <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Registro de Personas</p>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                                <form class="mx-1 mx-md-4">
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <label class="form-label" id="label" for="form3Example3c">Numero de
+                                            Cédula</label>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <input type="email" id="name" class="form-control" [(ngModel)]="persona.cedula" name="cedula"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <label class="form-label" id="label" for="form3Example1c">Apellidos</label>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <input type="text" id="name" class="form-control" [(ngModel)]="persona.apellidos" name="apellidos"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <label class="form-label" id="label" for="form3Example6c">Fecha de
+                                            Nacimiento</label>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <input type="date" id="name" class="form-control" [(ngModel)]="persona.fechaNacimiento" name="fechaNacimiento"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4" id="label2">
+                                        <label class="form-label" id="label" for="form3Example11c">Numero de
+                                            Celular</label>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <input type="text" id="name" class="form-control" [(ngModel)]="persona.telefono" name="telefono"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 justify-content-center">
+                                        <label for="formFile" id="label" class="form-label">Foto de Perfil</label>
+                                        <input type="file" id="formFile" accept="image/jpeg, image/png, image/jpg">
+                                    </div>
+
+                                </form>
+
+                            </div>
+                            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1" id="div1">
+
+                                <form class="mx-1 mx-md-4">
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <label class="form-label" id="label" for="form3Example1c">Nombres</label>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <input type="text" id="name" class="form-control" [(ngModel)]="persona.nombres" name="nombres"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <label class="form-label" id="label" for="form3Example3c">Correo
+                                            Electronico</label>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <input type="email" id="name" class="form-control" [(ngModel)]="persona.correo" name="correo"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+
+                                        <div class="form-check form-check-inline">
+                                            <label class="form-label" id="label" for="form3Example1c">Género:</label>
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="maleGender" value="Masculino" [(ngModel)]="persona.genero" name="genero"/>
+                                            <label class="form-check-label" id="gen"
+                                                for="femaleGender">Masculino</label>
+                                            <div class="form-check form-check-inline" id="fem">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                    id="femaleGender" value="Femenino" [(ngModel)]="persona.genero" name="genero"/>
+                                                <label class="form-check-label" id="gen"
+                                                    for="maleGender">Femenino</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4" id="direc">
+                                        <label class="form-label" id="label" for="form3Example3c">Dirección</label>
+                                        <div class="form-outline flex-fill mb-0">
+                                            <input type="email" id="name" class="form-control" [(ngModel)]="persona.direccion" name="direccion"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="boton">
+                                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4" id="button">
+                                            <button type="button" class="btn btn-primary btn-lg"(click)="crearPersona()">Guardar</button>
+                                            <button type="button" class="btn btn-primary btn-lg"(click)="actualizarPersona()">Modificar</button>
+                                            <button type="button" class="btn btn-primary btn-lg">Eliminar</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
